@@ -35,27 +35,33 @@
       <div class="arrow right-arrow">→</div>
     </section>
 
-    <!-- Área de contenido y vídeo -->
-    <section class="content-area">
-      <div class="video-placeholder">Video</div>
-      <div class="article">
-        <p>Lorem ipsum...</p>
-        <!-- Agregar más contenido del artículo aquí -->
-      </div>
-    </section>
+    <!-- Bloques de contenido con imagen y texto -->
+    <div class="content-blocks">
+      <!-- Bloque superior -->
+      <section class="content-block">
+        <div class="content-image">
+          <img src="@/assets/img/hero.jpeg" alt="Descripción">
+        </div>
+        <div class="content-text">
+          <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+      </section>
 
-    <!-- Sección de anuncios o publicaciones -->
-    <section class="ads">
-      <div class="ad-placeholder">Anuncio 1</div>
-      <div class="ad-placeholder">Anuncio 2</div>
-      <!-- Agrega más placeholders de anuncios según sea necesario -->
-    </section>
+      <!-- Bloque inferior -->
+      <section class="content-block reverse">
+        <div class="content-image">
+          <img src="@/assets/img/hero.jpeg" alt="Descripción">
+        </div>
+        <div class="content-text">
+          <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+      </section>
+    </div>
+
 
     <!-- Pie de página -->
-    <footer class="footer">
-      <p>Aspectos legales | Políticas de privacidad | Seguridad | Administrar cookies</p>
-      <!-- Agrega más contenido de pie de página si es necesario -->
-    </footer>
+   
+
   </div>
 </template>
 
@@ -73,6 +79,10 @@ export default {
   methods: {
     toggleMenu() {
       this.showMenu = !this.showMenu;
+    },
+    goToVideo() {
+      // Lógica para ir al vídeo
+      window.open('URL_del_video', '_blank');
     },
   },
 };
@@ -179,6 +189,7 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 20px 0;
+  padding-bottom: 5rem;
   /* Ajuste según sea necesario */
 }
 
@@ -196,12 +207,18 @@ export default {
 }
 
 .brand-image {
-  width: 15rem; /* O un ancho específico */
-  height: auto; /* Para mantener la proporción */
-  margin: 0 15px; /* Espacio entre imágenes */
-  border-radius: 20px; /* Añade bordes redondeados aquí */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para dar profundidad */
-  overflow: hidden; /* Asegura que las imágenes también se corten a la forma redondeada */
+  width: 15rem;
+  /* O un ancho específico */
+  height: auto;
+  /* Para mantener la proporción */
+  margin: 0 15px;
+  /* Espacio entre imágenes */
+  border-radius: 20px;
+  /* Añade bordes redondeados aquí */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Opcional: sombra para dar profundidad */
+  overflow: hidden;
+  /* Asegura que las imágenes también se corten a la forma redondeada */
 }
 
 .brand-image-placeholder {
@@ -236,40 +253,99 @@ export default {
   /* Fondo para Citroën */
 }
 
-/* Estilo para las imágenes y logos con fondo negro */
-.image-placeholder,
-.brand-image-placeholder,
-.video-placeholder,
-.ad-placeholder {
-  background-color: black;
+.content-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  /* Espacio entre los bloques de contenido */
+}
+
+.content-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* Espacio entre la imagen y el texto */
+  margin: 2rem;
+  /* Margen alrededor del bloque para evitar que esté demasiado pegado al borde de la ventana o a otros elementos */
+}
+
+.content-block.reverse {
+  flex-direction: row-reverse;
+  /* Invierte el orden para el bloque inferior */
+}
+
+.content-image {
+  flex: 1;
+  padding: 0 2rem;
+  /* Relleno horizontal para separar la imagen del texto */
+}
+
+.content-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* Esquinas redondeadas para las imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra para dar profundidad a las imágenes */
+}
+
+.content-text {
+  flex: 1;
+  padding: 2rem;
+  /* Relleno interno para el texto */
+}
+
+
+/* footer */
+
+
+.footer {
+  width: 100%;
+  padding-top: 5rem;
+
+}
+
+.footer-top,
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem; /* Añade un poco de espacio alrededor del contenido */
+}
+
+.contact-info {
+  display: flex;
+  gap: 1rem; /* Espacio entre los elementos de contacto */
   color: white;
+}
+
+.social-icons {
+  font-size: 1.5rem; /* Tamaño de los íconos de las redes sociales */
+  display: flex;
+  gap: 1rem; /* Espacio entre los íconos */
+}
+
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #fff; /* Línea blanca para dividir las secciones */
+  margin: 0.5rem 0;
+}
+
+.legal-links {
   text-align: center;
-  line-height: 100px;
-  /* Ajusta esto según el tamaño que desees */
-  margin: 10px;
-  height: 100px;
-  /* Ajusta la altura */
+  padding: 0.5rem 0;
+  color: #fff; /* Color de texto de los enlaces legales */
 }
 
-/* Estilos para la sección de marca */
-.brand-carousel {
-  display: flex;
-  justify-content: center;
-  /* Añadir más estilos según sea necesario */
+/* Iconos de FontAwesome */
+.icon i,
+.social-icons i {
+  color: #fff; /* Color de los íconos */
 }
 
-/* Estilos para el contenido y vídeo */
-.content-area {
-  display: flex;
-  /* Añadir más estilos según sea necesario */
+/* Añade estilos para hover y focus según necesites */
+.icon:hover,
+.social-icons i:hover {
+  color: #ddd; /* Cambio de color al pasar el mouse */
 }
-
-.article {}
-
-/* Estilos para la sección de anuncios */
-.ads {
-  /* Tu estilo aquí */
-}
-
-.footer {}
 </style>
