@@ -1,9 +1,9 @@
 // router/index.ts
 
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
+import type { RouteRecordRaw } from 'vue-router';
 import Home from '@/views/Home.vue';
 
-// Aquí importamos RouteRecordRaw para usarlo en la definición de tus rutas
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -14,7 +14,8 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  // Usa import.meta.env.VITE_BASE_URL en lugar de process.env.BASE_URL
+  history: createWebHistory(import.meta.env.VITE_BASE_URL),
   routes,
 });
 
