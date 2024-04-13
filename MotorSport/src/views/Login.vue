@@ -107,7 +107,7 @@ button:hover {
 }
 
 .signup-prompt a {
-  color: white; /* Enlace en blanco */
+  color: #333333; /* Enlace en blanco */
   text-decoration: none;
 }
 
