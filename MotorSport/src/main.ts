@@ -2,10 +2,11 @@
 
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './router'; // Asegúrate de que la ruta de importación sea correcta
+import router from './router';
+import './assets/base.css'; // Agrega esta línea para importar tus estilos globales
 
 const app = createApp(App);
 
-app.use(router); // Utiliza Vue Router
+app.use(router);
 
 app.mount('#app');
