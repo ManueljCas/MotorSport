@@ -34,82 +34,85 @@
   </script>
   
   <style scoped>
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(43, 39, 39);/* Fondo semi-transparente para oscurecer la imagen detrás */
-  }
-  
-  .login-card {
-    display: flex;
-    width: 70%; /* Ancho del card */
-    max-width: 800px; /* Máximo ancho del card */
-    height: 70%; /* Altura del card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .login-image-section {
-    background: url('@/assets/img/login.jpeg') no-repeat center center;
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.login-card {
+  display: flex;
+  width: 70%; /* Ancho del card */
+  max-width: 800px; /* Máximo ancho del card */
+  height: 70%; /* Altura del card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.login-image-section {
+  background: url('@/assets/img/login.jpeg') no-repeat center center;
   background-size: cover;
   flex: 1; /* O cualquier proporción que necesites para el lado de la imagen */
   border-top-left-radius: 20px; /* Redondear las esquinas izquierdas superiores */
   border-bottom-left-radius: 20px; /* Redondear las esquinas izquierdas inferiores */
-  background-attachment: scroll;
-  }
-  
-  .login-form-section {
-    flex: 1;
-    padding: 2em;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #555454; /* Fondo blanco para la sección del formulario */
-  }
-  
-  .input-group {
-    margin-bottom: 1em;
-  }
-  
-  input {
-    width: 100%;
-    padding: 1em;
-    margin-top: 0.5em;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    color: black;
-    width: 100%;
-    padding: 1em;
-    border: none;
-    border-radius: 5px;
-    background-color: #e3dfdf;
-    font-weight: bold;
-    margin-top: 1em;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #555555;
-  }
-  
-  .signup-prompt {
-    text-align: center;
-    margin-top: 1em;
-  }
-  
-  .signup-prompt a {
-    color: #333333;
-    text-decoration: none;
-  }
-  
-  .signup-prompt a:hover {
-    text-decoration: underline;
-  }
-  </style>
+}
+
+.login-form-section {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #918f8f; /* Fondo gris para la sección del formulario, como en Register.vue */
+  color: white; /* Texto en blanco */
+}
+
+.input-group {
+  margin-bottom: 1em;
+}
+
+input {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  background: white; /* Fondo de los inputs */
+  color: #333; /* Color del texto para los inputs */
+}
+
+button {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #e3dfdf; /* Fondo de los botones, como en Register.vue */
+  color: black; /* Texto de los botones en negro */
+  font-weight: bold;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cacaca; /* Color al pasar el ratón por encima del botón */
+}
+
+.signup-prompt {
+  text-align: center;
+  margin-top: 1em;
+  color: white; /* Texto del enlace en blanco */
+}
+
+.signup-prompt a {
+  color: white; /* Enlace en blanco */
+  text-decoration: none;
+}
+
+.signup-prompt a:hover {
+  text-decoration: underline;
+  color: #ccc; /* Enlace al pasar el ratón por encima */
+}
+</style>
