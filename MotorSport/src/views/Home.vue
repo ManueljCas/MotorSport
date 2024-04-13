@@ -15,12 +15,12 @@
         <li><router-link to="/register">Registrarse</router-link></li>
       </ul>
     </div>
-  </nav>
+    </nav>
 
     <!-- Área principal de Motorsport con imagen destacada -->
     <section class="motorsport-highlight">
-      <div class="image-placeholder">Imagen Destacada</div>
-    </section>
+    <div class="company-name-bar">MOTORSPORT</div>
+  </section>
 
     <!-- Carrusel de marcas -->
     <section class="brand-carousel">
@@ -73,6 +73,7 @@ export default {
 <style scoped>
 .home {
   /* Estilos para el contenedor principal */
+  background-color: #8c8484;
 }
 
 /* Estilos para la barra de navegación */
@@ -139,6 +140,25 @@ display: block;
 
 .menu-options li a:hover {
 background-color: #eee;
+}
+
+.motorsport-highlight {
+position: relative;
+background: url('@/assets/img/hero.jpeg') no-repeat center center;
+background-size: cover;
+height: 500px; /* o cualquier altura que prefieras */
+}
+
+.company-name-bar {
+position: absolute;
+top: 0; /* Alineado a la parte superior de la sección */
+width: 100%; /* Abarca todo el ancho */
+height: 30rem;
+background-color: rgba(0, 0, 0, 0.7); /* Un fondo semitransparente */
+color: #fff;
+text-align: center;
+padding: 10px 0; /* Algunos espacios arriba y abajo dentro del contenedor */
+font-size: 2em; /* Ajusta el tamaño de fuente según sea necesario */
 }
 
 /* Estilo para las imágenes y logos con fondo negro */
