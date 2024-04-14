@@ -2,7 +2,6 @@
   <nav class="navbar">
     <ul class="nav-links">
       <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/modelos">Modelos</router-link></li>
       <li><router-link to="/aboutus">Nosotros</router-link></li>
       <li><router-link to="/blog">Blog</router-link></li>
     </ul>
