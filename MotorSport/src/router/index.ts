@@ -5,6 +5,8 @@ import type { RouteRecordRaw } from 'vue-router';
 import Home from '@/views/Home.vue';
 import Login from '@/views/Login.vue'; 
 import Register from '@/views/Register.vue'; 
+import AboutUs from '@/views/AboutUs.vue'; 
+import Blog from '@/views/Blog.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -21,6 +23,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/register',
     name: 'Register',
     component: Register,
+  },
+  {
+    path: '/aboutus',
+    name: 'AboutUs',
+    component: AboutUs,
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog,
   },
   // ... otras rutas
 ];
