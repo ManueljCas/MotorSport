@@ -5,44 +5,50 @@
       <li><router-link to="/aboutus">Nosotros</router-link></li>
       <li><router-link to="/blog">Blog</router-link></li>
     </ul>
+    
     <div class="circle-menu" @click="toggleMenu">☰</div>
     <div v-if="showMenu" class="menu-options">
       <ul>
-        <li><router-link to="/login">Iniciar sesión</router-link></li>
-        <li><router-link to="/register">Registrarse</router-link></li>
+        <li v-if="!user"><router-link to="/login">Iniciar sesión</router-link></li>
+        <li v-if="!user"><router-link to="/register">Registrarse</router-link></li>
+        <li v-if="user"><button @click="logout">{{ user.displayName || user.email }} Salir</button></li>
       </ul>
     </div>
   </nav>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-export default defineComponent({
+import { auth } from '../../services/firebase/firebaseConfig';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+
+export default {
   name: 'NavBarComponent',
   data() {
     return {
-      showMenu: false,
-      nissan: new URL('@/assets/img/nissan.jpeg', import.meta.url).href,
-      honda: new URL('@/assets/img/honda.jpeg', import.meta.url).href,
-      citroen: new URL('@/assets/img/citroen.jpeg', import.meta.url).href,
+      user: null,
+      showMenu: false, // Controla la visibilidad del menú desplegable
     };
   },
+  created() {
+    onAuthStateChanged(auth, (user) => {
+      this.user = user;
+    });
+  },
   methods: {
-    toggleMenu() {
-      this.showMenu = !this.showMenu;
+    async logout() {
+      await signOut(auth);
+      this.user = null;
+      this.$router.push('/'); // Redirige al inicio después de cerrar sesión
+      this.showMenu = false; // Cierra el menú hamburguesa
     },
-    goToVideo() {
-      // Lógica para ir al vídeo
-      window.open('URL_del_video', '_blank');
+    toggleMenu() {
+      this.showMenu = !this.showMenu; // Cambia el estado de visibilidad del menú
     },
   },
-
-})
+};
 </script>
 
 <style scoped>
-
-/* Estilos para la barra de navegación */
 .navbar {
   background-color: #333;
   display: flex;
@@ -50,6 +56,7 @@ export default defineComponent({
   padding: 0.5rem 1rem;
   align-items: center;
 }
+
 .nav-links {
   list-style-type: none;
   padding: 0;
@@ -67,7 +74,7 @@ export default defineComponent({
   text-decoration: underline;
 }
 
-/* Estilo para el círculo que es un menú */
+/* Estilo consistente para el círculo del menú */
 .circle-menu {
   width: 50px;
   height: 50px;
@@ -77,13 +84,15 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative; /* Asegura que el z-index tenga efecto */
+  z-index: 200; /* Mantiene el círculo del menú encima de otros elementos */
 }
 
 /* Estilos para las opciones del menú */
 .menu-options {
   position: absolute;
   right: 1rem;
-  top: 3rem;
+  top: 60px; /* Ajusta este valor según sea necesario para que no se superponga con otros elementos */
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -96,14 +105,18 @@ export default defineComponent({
   margin: 0;
 }
 
-.menu-options li a {
+.menu-options li a, .menu-options li button {
   color: #333;
   text-decoration: none;
   padding: 0.5rem 1rem;
   display: block;
+  background: none; /* Quitar cualquier fondo que pueda haber */
+  border: none; /* Quitar bordes */
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.menu-options li a:hover {
-  background-color: #eee;
+.menu-options li a:hover, .menu-options li button:hover {
+  background-color: #eee; /* Cambio sutil al pasar el ratón */
 }
+
 </style>
