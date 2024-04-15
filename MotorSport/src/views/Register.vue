@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { registerUser } from '../services/authentication/authService';
+import { registerUser } from '../services/authenticathion/authService';
 export default {
   name: 'Register',
   data() {
