@@ -1,4 +1,3 @@
-
 <template>
   <div class="login-container">
     <div class="login-card">
@@ -33,7 +32,7 @@
 </template>
 
 <script>
-import { loginUser } from '../services/authentication/authService';
+import { loginUser } from '../services/authenticathion/authService';
 
 export default {
   name: 'Login',
