@@ -63,6 +63,11 @@ export default {
 </script>
 
 <style scoped>
+
+h2{
+text-align: center;
+}
+
 .home {
   background-color: #8c8484;
 }
@@ -113,6 +118,7 @@ export default {
 
 .mission,
 .vision {
+  text-align: justify;
   flex-basis: 45%;
 }
 

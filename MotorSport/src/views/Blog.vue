@@ -63,12 +63,12 @@ export default {
         cards: [
                 { id: 1, title: 'Jeep Gladiator 6x6', description: 'Las motorizaciones actuales son una versión turbodiésel V6 3.0L que rinde unos 623Nm de par motor, un motor HEMI 392 de 505CV y el todopoderoso HEMI 6.2 Supercharged Hellcat de 800CV. Toda esa potencia se entrega a las 4 o 6 ruedas', image: JeepGladiatorImage },
                 // Repite para cada tarjeta con la imagen correspondiente importada.
-                { id: 2, title: 'Gixxer 250', description: 'Exelente moto para andar y dusfrutar en la ciudad, una moto creada para dominar las calles. Un diseño naked para imponerte en ellas "DESDE" $88,990.', image: Gixxer250Image },
+                { id: 2, title: 'Gixxer 250', description: 'La Gixxer 250, una motocicleta deportiva de Suzuki, combina potencia y estilo en un diseño elegante. Con un motor de 250 cc, ofrece un rendimiento emocionante y maniobrabilidad ágil para aventuras en carretera.', image: Gixxer250Image },
                
-                { id: 3, title: 'Dominar 250', description: 'La Dominar 250 es una motocicleta ágil y económica, ideal para desplazamientos urbanos y viajes cortos', image: dominar },
+                { id: 3, title: 'Dominar 250', description: 'La Dominar 250 de Bajaj, con su motor de 250 cc y un diseño aerodinámico, brinda un rendimiento potente y versátil, perfecto para experiencias urbanas emocionantes y largos viajes en carretera.', image: dominar },
                 { id: 4, title: 'Mustang GT Premium', description: 'El Mustang GT Premium es un icono de potencia y estilo de Ford. Con un motor V8 de alto rendimiento, ofrece una experiencia de conducción emocionante y un interior lujoso con características premium, fusionando el legado del Mustang con la modernidad.', image: camaro },
-                { id: 5, title: 'Ford Mustang', description: 'El Ford Mustang es un legendario automóvil deportivo estadounidense, reconocido por su diseño clásico y su potente rendimiento. Desde su debut en 1964, ha sido un ícono cultural y un símbolo de libertad y estilo. Ofrece una amplia gama de opciones de motor, desde modelos de cuatro cilindros hasta potentes V8, brindando una experiencia de conducción emocionante para entusiastas de todos los niveles.', image: camaro2 },
-                { id: 6, title: 'Domain', description: 'La R34 es un icónico automóvil deportivo japonés, famoso por su potencia, diseño aerodinámico y legado en la cultura automotriz', image: skyline },
+                { id: 5, title: 'Ford Mustang', description: 'El Ford Mustang es un legendario automóvil deportivo estadounidense, reconocido por su diseño clásico y su potente rendimiento. Desde su debut en 1964, ha sido un ícono cultural y un símbolo de libertad y estilo.', image: camaro2 },
+                { id: 6, title: 'Skyline R34', description: 'El R34 Skyline, un legendario automóvil deportivo japonés fabricado por Nissan, destaca por su diseño aerodinámico y su potente motor turbocharged. Es famoso por su rendimiento excepcional y su estatus icónico en la cultura automotriz.', image: skyline },
                
             ],
 

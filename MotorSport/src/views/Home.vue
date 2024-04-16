@@ -36,7 +36,7 @@
       <!-- Bloque inferior -->
       <section class="content-block reverse">
         <div class="content-image">
-          <img src="@/assets/img/hondaa.jpeg" alt="Descripción">
+          <img src="@/assets/img/titi.jpeg" alt="Descripción">
         </div>
         <div class="content-text">
           <p>Honda, el gigante japonés del automóvil, ofrece una amplia gama de vehículos confiables y eficientes, desde automóviles compactos hasta SUVs y motocicletas de alto rendimiento, combinando calidad, tecnología y diseño innovador.</p>
@@ -65,7 +65,7 @@ export default {
     return {
       showMenu: false,
       nissan: new URL('@/assets/img/nissan.jpeg', import.meta.url).href,
-      honda: new URL('@/assets/img/honda.jpeg', import.meta.url).href,
+      honda: new URL('@/assets/img/HondaL.jpeg', import.meta.url).href,
       citroen: new URL('@/assets/img/citroen.jpeg', import.meta.url).href,
     };
   },
@@ -221,6 +221,11 @@ export default {
   flex: 1;
   padding: 2rem;
   /* Relleno interno para el texto */
+}
+
+p{
+  color: white;
+  text-align: justify;
 }
 
 </style>
