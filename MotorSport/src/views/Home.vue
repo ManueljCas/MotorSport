@@ -26,20 +26,20 @@
       <!-- Bloque superior -->
       <section class="content-block">
         <div class="content-image">
-          <img src="@/assets/img/hero.jpeg" alt="Descripción">
+          <img src="@/assets/img/tesla.jpeg" alt="Descripción">
         </div>
         <div class="content-text">
-          <p>Lorem ipsum dolor sit amet...</p>
+          <p>Tesla, la compañía de vehículos eléctricos y tecnología energética, revoluciona la industria automotriz con sus innovaciones en baterías, conducción autónoma y energía solar, liderando el camino hacia un futuro sostenible..</p>
         </div>
       </section>
 
       <!-- Bloque inferior -->
       <section class="content-block reverse">
         <div class="content-image">
-          <img src="@/assets/img/hero.jpeg" alt="Descripción">
+          <img src="@/assets/img/hondaa.jpeg" alt="Descripción">
         </div>
         <div class="content-text">
-          <p>Lorem ipsum dolor sit amet...</p>
+          <p>Honda, el gigante japonés del automóvil, ofrece una amplia gama de vehículos confiables y eficientes, desde automóviles compactos hasta SUVs y motocicletas de alto rendimiento, combinando calidad, tecnología y diseño innovador.</p>
         </div>
       </section>
     </div>
