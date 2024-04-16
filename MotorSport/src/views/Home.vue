@@ -97,6 +97,7 @@ export default {
   /* Espaciado arriba y abajo */
   font-size: 3em;
   /* Tamaño del texto */
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .motorsport-highlight {

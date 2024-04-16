@@ -65,6 +65,7 @@ export default {
                
                 { id: 3, title: 'Gixxer 250', description: 'Descripción de la Gixxer 250.', image: dominar },
                 { id: 4, title: 'Gixxer 250', description: 'Descripción de la Gixxer 250.', image: Gixxer250Image },
+                { id: 5, title: 'Gixxer 250', description: 'Descripción de la Gixxer 250.', image: Gixxer250Image },
                
             ],
 

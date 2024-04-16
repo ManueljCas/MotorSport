@@ -11,11 +11,11 @@
           <div class="mission-vision">
               <div class="mission">
                   <h2>Misión</h2>
-                  <p>Texto de la misión...</p>
+                  <p>en motorsport nos dedicamos a inspirar y empoderar a los entusiastas del motor proporcionando una plataforma completa donde puedan descubrir y explorar los últimos modelos de autos y motos. Nuestra misión es ser una fuente confiable de conocimiento y recursos, promoviendo una comunidad inclusiva y acogedora para todos los amantes de los motores.</p>
               </div>
               <div class="vision">
                   <h2>Visión</h2>
-                  <p>Texto de la visión...</p>
+                  <p>En motosport , nuestra visión es convertirnos en el destino preferido en línea para entusiastas del motor de todo el mundo. Nos esforzamos por ser reconocidos como la plataforma líder que ofrece una experiencia incomparable de descubrimiento y exploración de los últimos modelos de autos y motos. Aspiramos a ser un referente en la industria automotriz, brindando inspiración, conocimiento y conexión a una comunidad global de amantes del motor.</p>
               </div>
           </div>
 

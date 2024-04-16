@@ -69,9 +69,9 @@ export default defineComponent({
 
 .footer-divider {
   border: 0;
-  border-top: 1px solid #fff;
+  border-top: 10px solid #fff;
   /* Línea blanca para dividir las secciones */
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 
 .legal-links {
