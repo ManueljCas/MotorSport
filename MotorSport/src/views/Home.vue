@@ -12,13 +12,14 @@
 
     <!-- Carrusel de marcas -->
     <section class="brand-carousel">
-      <div class="arrow left-arrow">←</div>
+      <div class="arrow left-arrow"></div>
       <div class="brand-image-container">
         <img :src="nissan" alt="Nissan" class="brand-image" />
         <img :src="honda" alt="Honda" class="brand-image" />
         <img :src="citroen" alt="Citroën" class="brand-image" />
+        <img :src="bmw" alt="Citroën" class="brand-image" />
       </div>
-      <div class="arrow right-arrow">→</div>
+      <div class="arrow right-arrow"></div>
     </section>
 
     <!-- Bloques de contenido con imagen y texto -->
@@ -67,6 +68,7 @@ export default {
       nissan: new URL('@/assets/img/nissan.jpeg', import.meta.url).href,
       honda: new URL('@/assets/img/HondaL.jpeg', import.meta.url).href,
       citroen: new URL('@/assets/img/citroen.jpeg', import.meta.url).href,
+      bmw: new URL('@/assets/img/bmwL.jpeg', import.meta.url).href,
     };
   },
   methods: {
