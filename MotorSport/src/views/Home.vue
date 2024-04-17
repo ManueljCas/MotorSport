@@ -293,10 +293,12 @@ p {
   position: relative; /* Posicionamiento relativo para el iframe absoluto */
   padding-top: 0; /* Elimina el padding-top si ya no mantienes la relación de aspecto */
   padding: 12rem; /* Aplica padding al contenedor para evitar que el video toque los bordes */
+ 
 }
 
 .youtube-video-container iframe {
   position: absolute;
+  border-radius: 10px;
   top: 0;
   left: 0;
   right: 0;
