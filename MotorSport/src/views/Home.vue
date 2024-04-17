@@ -50,7 +50,7 @@
       </div>
       
 
-      <!-- Bloque superior Youtube -->
+   
 
 
 
@@ -110,7 +110,7 @@ export default {
       citroen: new URL('@/assets/img/citroen.jpeg', import.meta.url).href,
       bmw: new URL('@/assets/img/bmwL.jpeg', import.meta.url).href,
       videoUrl: 'https://www.youtube.com/embed/dPb3ig0LdqM',
-      videoUrl2: 'https://www.youtube.com/embed/Sa5ABIgARp0'
+      videoUrl2: 'https://www.youtube.com/embed/zINZq9Bt8YU'
     };
   },
   methods: {
