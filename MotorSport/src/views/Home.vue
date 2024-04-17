@@ -24,30 +24,52 @@
 
     <!-- Bloques de contenido con imagen y texto -->
     <div class="content-blocks">
-      <!-- Bloque superior -->
-      <section class="content-block">
+      <div>
+        <section class="content-block">
         <div class="content-image">
           <img src="@/assets/img/tesla.jpeg" alt="Descripción">
         </div>
         <div class="content-text">
-          <p>Tesla, la compañía de vehículos eléctricos y tecnología energética, revoluciona la industria automotriz con sus innovaciones en baterías, conducción autónoma y energía solar, liderando el camino hacia un futuro sostenible..</p>
+          <p>Tesla, la compañía de vehículos eléctricos y tecnología energética, revoluciona la industria automotriz con
+            sus innovaciones en baterías, conducción autónoma y energía solar, liderando el camino hacia un futuro
+            sostenible..</p>
         </div>
       </section>
 
+      <div class="video-text-block">
+        <div class="text-content">
+          <p>AUDI RS7 C8 con sonidos explica el poder del motor esperando la actualizacion a super deportivo</p>
+        </div>
+        <div class="youtube-video-container">
+          <iframe width="560" height="315" :src="videoUrl" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      </div>
+      
+
+      <!-- Bloque superior Youtube -->
+
+
+
       <!-- Bloque inferior -->
-      <section class="content-block reverse">
+      <section class="content-block">
         <div class="content-image">
           <img src="@/assets/img/titi.jpeg" alt="Descripción">
         </div>
         <div class="content-text">
-          <p>Honda, el gigante japonés del automóvil, ofrece una amplia gama de vehículos confiables y eficientes, desde automóviles compactos hasta SUVs y motocicletas de alto rendimiento, combinando calidad, tecnología y diseño innovador.</p>
+          <p>Honda, el gigante japonés del automóvil, ofrece una amplia gama de vehículos confiables y eficientes, desde
+            automóviles compactos hasta SUVs y motocicletas de alto rendimiento, combinando calidad, tecnología y diseño
+            innovador.</p>
         </div>
       </section>
     </div>
 
 
     <!-- Pie de página -->
-    <FooterComponent/>
+    <FooterComponent />
 
   </div>
 </template>
@@ -69,6 +91,7 @@ export default {
       honda: new URL('@/assets/img/HondaL.jpeg', import.meta.url).href,
       citroen: new URL('@/assets/img/citroen.jpeg', import.meta.url).href,
       bmw: new URL('@/assets/img/bmwL.jpeg', import.meta.url).href,
+      videoUrl: 'https://www.youtube.com/embed/dPb3ig0LdqM'
     };
   },
   methods: {
@@ -99,7 +122,7 @@ export default {
   /* Espaciado arriba y abajo */
   font-size: 3em;
   /* Tamaño del texto */
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .motorsport-highlight {
@@ -225,9 +248,43 @@ export default {
   /* Relleno interno para el texto */
 }
 
-p{
+p {
   color: white;
   text-align: justify;
+}
+
+/* youtube */
+.video-text-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1200px; /* Ajusta este valor al ancho máximo deseado */
+  gap: 2rem; /* Espacio entre el texto y el video */
+  padding: 2rem; /* Padding general para el bloque */
+}
+
+.text-content {
+  flex-basis: 40%; /* Ajusta este valor para el ancho del texto */
+  padding: 2rem; /* Padding para el texto, si es necesario */
+}
+
+.youtube-video-container {
+  flex-basis: 60%; /* Ajusta este valor para el ancho del video */
+  position: relative; /* Posicionamiento relativo para el iframe absoluto */
+  padding-top: 0; /* Elimina el padding-top si ya no mantienes la relación de aspecto */
+  padding: 12rem; /* Aplica padding al contenedor para evitar que el video toque los bordes */
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Elimina el borde del iframe */
 }
 
 </style>
