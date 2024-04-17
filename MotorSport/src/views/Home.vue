@@ -38,7 +38,7 @@
 
       <div class="video-text-block">
         <div class="text-content">
-          <p>AUDI RS7 C8 con sonidos explica el poder del motor esperando la actualizacion a super deportivo</p>
+          <p>Sumérgete en el mundo del lujo y la alta velocidad con el Audi RS C8, un automóvil que redefine la excelencia en ingeniería automotriz. Diseñado para los verdaderos conocedores del automóvil que buscan la combinación perfecta de rendimiento excepcional, tecnología de vanguardia y estilo impecable, el RS C8 es más que un automóvil; es una obra maestra de la innovación que lleva la experiencia de conducción a nuevas alturas</p>
         </div>
         <div class="youtube-video-container">
           <iframe width="560" height="315" :src="videoUrl" frameborder="0"
@@ -65,6 +65,24 @@
             innovador.</p>
         </div>
       </section>
+
+
+      <div class="video-text-block">
+        <div class="text-content">
+          <p>Adéntrate en el mundo de la velocidad y el rendimiento con la Yamaha YZF-R1, una motocicleta que lleva la excelencia en ingeniería a nuevos límites. Diseñada para aquellos que buscan la emoción pura y la adrenalina de la competición, la R1 es más que una simple motocicleta; es una obra maestra de la ingeniería que redefine lo que es posible en el asfalto.</p>
+        </div>
+        <div class="youtube-video-container">
+          <iframe width="560" height="315" :src="videoUrl2" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+
+
+
+
     </div>
 
 
@@ -91,7 +109,8 @@ export default {
       honda: new URL('@/assets/img/HondaL.jpeg', import.meta.url).href,
       citroen: new URL('@/assets/img/citroen.jpeg', import.meta.url).href,
       bmw: new URL('@/assets/img/bmwL.jpeg', import.meta.url).href,
-      videoUrl: 'https://www.youtube.com/embed/dPb3ig0LdqM'
+      videoUrl: 'https://www.youtube.com/embed/dPb3ig0LdqM',
+      videoUrl2: 'https://www.youtube.com/embed/Sa5ABIgARp0'
     };
   },
   methods: {
