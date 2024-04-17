@@ -9,25 +9,35 @@
     <section class="motorsport-highlight">
       <!-- La imagen se establecerá en el CSS -->
     </section>
-
+    <div class = "divider-content"></div>
     <!-- Carrusel de marcas -->
     <section class="brand-carousel">
       <div class="arrow left-arrow"></div>
       <div class="brand-image-container">
+        <a href="https://www.nissan.com.mx/">
         <img :src="nissan" alt="Nissan" class="brand-image" />
+      </a>
+      <a href="https://www.honda.mx/">
         <img :src="honda" alt="Honda" class="brand-image" />
+      </a>
+        <a href="https://www.kia.com/mx/main.html">
         <img :src="citroen" alt="Citroën" class="brand-image" />
+      </a>
+        <a href="https://www.mercedes-benz.com.mx/es/passengercars.html">
         <img :src="bmw" alt="Citroën" class="brand-image" />
+      </a>
       </div>
       <div class="arrow right-arrow"></div>
     </section>
-
+    <div class = "divider-content"></div>
     <!-- Bloques de contenido con imagen y texto -->
     <div class="content-blocks">
       <div>
         <section class="content-block">
         <div class="content-image">
+          <a href="https://www.tesla.com/es_mx/modelx">
           <img src="@/assets/img/tesla.jpeg" alt="Descripción">
+        </a>
         </div>
         <div class="content-text">
           <p>Tesla, la compañía de vehículos eléctricos y tecnología energética, revoluciona la industria automotriz con
@@ -35,7 +45,7 @@
             sostenible..</p>
         </div>
       </section>
-
+      <div class = "divider-content"></div>
       <div class="video-text-block">
         <div class="text-content">
           <p>Sumérgete en el mundo del lujo y la alta velocidad con el Audi RS C8, un automóvil que redefine la excelencia en ingeniería automotriz. Diseñado para los verdaderos conocedores del automóvil que buscan la combinación perfecta de rendimiento excepcional, tecnología de vanguardia y estilo impecable, el RS C8 es más que un automóvil; es una obra maestra de la innovación que lleva la experiencia de conducción a nuevas alturas</p>
@@ -52,12 +62,14 @@
 
    
 
-
+      <div class = "divider-content"></div>
 
       <!-- Bloque inferior -->
       <section class="content-block">
         <div class="content-image">
+          <a href="https://www.ducati.com/mx/es/motocicletas/panigale/superleggera-v4">
           <img src="@/assets/img/titi.jpeg" alt="Descripción">
+          </a>
         </div>
         <div class="content-text">
           <p>Honda, el gigante japonés del automóvil, ofrece una amplia gama de vehículos confiables y eficientes, desde
@@ -66,7 +78,7 @@
         </div>
       </section>
 
-
+<div class = "divider-content"></div>
       <div class="video-text-block">
         <div class="text-content">
           <p>Adéntrate en el mundo de la velocidad y el rendimiento con la Yamaha YZF-R1, una motocicleta que lleva la excelencia en ingeniería a nuevos límites. Diseñada para aquellos que buscan la emoción pura y la adrenalina de la competición, la R1 es más que una simple motocicleta; es una obra maestra de la ingeniería que redefine lo que es posible en el asfalto.</p>
@@ -134,21 +146,23 @@ export default {
 .company-name-bar {
   width: 100%;
   /* Abarca todo el ancho */
-  height: 10rem;
-  color: black;
+  height: 7rem;
+  color: white;
   text-align: center;
   padding: 10px 0;
+
   /* Espaciado arriba y abajo */
-  font-size: 3em;
+  font-size: 4em;
   /* Tamaño del texto */
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:fantasy;
+  opacity:0.8 ;
 }
 
 .motorsport-highlight {
   background: url('@/assets/img/hero.jpeg') no-repeat center center;
   background-size: cover;
-  height: 500px;
-  margin-bottom: 12rem;
+  height: 450px;
+  margin-bottom: 2rem;
   /* Ajusta la altura deseada */
   /* No se necesita posición relativa aquí a menos que vayas a posicionar otros elementos dentro de la sección de forma absoluta */
 }
@@ -177,7 +191,13 @@ export default {
   justify-content: center;
   align-items: center;
 }
-
+.divider-content {
+  border: 0;
+  border-top: 5px solid white;
+  /* Línea blanca para dividir las secciones */
+  margin: 1rem 0;
+  opacity: 0.1;
+}
 .brand-image {
   width: 15rem;
   /* O un ancho específico */

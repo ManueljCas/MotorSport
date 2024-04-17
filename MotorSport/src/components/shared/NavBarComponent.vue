@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <ul class="nav-links">
-      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/">Inicio</router-link></li>
       <li><router-link to="/aboutus">Nosotros</router-link></li>
       <li><router-link to="/blog">Blog</router-link></li>
     </ul>
@@ -55,11 +55,12 @@ export default {
   justify-content: space-between;
   padding: 0.5rem 1rem;
   align-items: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-links {
   list-style-type: none;
-  padding: 0;
+  padding: 10;
   margin: 0;
   display: flex;
   gap: 1rem;
@@ -72,6 +73,10 @@ export default {
 
 .nav-links li a:hover {
   text-decoration: underline;
+}
+.fondo {
+background-color:cornsilk;
+opacity: 0.10;
 }
 
 /* Estilo consistente para el círculo del menú */
