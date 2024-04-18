@@ -11,7 +11,9 @@
     </section>
     <div class = "divider-content"></div>
     <!-- Carrusel de marcas -->
+    <p class="name-bar">MEJORES MARCAS</p>
     <section class="brand-carousel">
+      
       <div class="arrow left-arrow"></div>
       <div class="brand-image-container">
         <a href="https://www.nissan.com.mx/">
@@ -40,6 +42,7 @@
         </a>
         </div>
         <div class="content-text">
+          <p class="titulo-texto">TESLA</p>
           <p>Tesla, la compañía de vehículos eléctricos y tecnología energética, revoluciona la industria automotriz con
             sus innovaciones en baterías, conducción autónoma y energía solar, liderando el camino hacia un futuro
             sostenible..</p>
@@ -48,6 +51,7 @@
       <div class = "divider-content"></div>
       <div class="video-text-block">
         <div class="text-content">
+          <p class="titulo-texto">AUDI</p>
           <p>Sumérgete en el mundo del lujo y la alta velocidad con el Audi RS C8, un automóvil que redefine la excelencia en ingeniería automotriz. Diseñado para los verdaderos conocedores del automóvil que buscan la combinación perfecta de rendimiento excepcional, tecnología de vanguardia y estilo impecable, el RS C8 es más que un automóvil; es una obra maestra de la innovación que lleva la experiencia de conducción a nuevas alturas</p>
         </div>
         <div class="youtube-video-container">
@@ -72,7 +76,8 @@
           </a>
         </div>
         <div class="content-text">
-          <p>Honda, el gigante japonés del automóvil, ofrece una amplia gama de vehículos confiables y eficientes, desde
+          <p class="titulo-texto">DUCATI</p>
+          <p>DUCATI, el gigante japonés del automóvil, ofrece una amplia gama de vehículos confiables y eficientes, desde
             automóviles compactos hasta SUVs y motocicletas de alto rendimiento, combinando calidad, tecnología y diseño
             innovador.</p>
         </div>
@@ -81,6 +86,7 @@
 <div class = "divider-content"></div>
       <div class="video-text-block">
         <div class="text-content">
+          <p class="titulo-texto">YAMAHA</p>
           <p>Adéntrate en el mundo de la velocidad y el rendimiento con la Yamaha YZF-R1, una motocicleta que lleva la excelencia en ingeniería a nuevos límites. Diseñada para aquellos que buscan la emoción pura y la adrenalina de la competición, la R1 es más que una simple motocicleta; es una obra maestra de la ingeniería que redefine lo que es posible en el asfalto.</p>
         </div>
         <div class="youtube-video-container">
@@ -146,10 +152,10 @@ export default {
 .company-name-bar {
   width: 100%;
   /* Abarca todo el ancho */
-  height: 7rem;
+  height: 6rem;
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 0px 0;
 
   /* Espaciado arriba y abajo */
   font-size: 4em;
@@ -184,7 +190,20 @@ export default {
   cursor: pointer;
   user-select: none;
 }
+.titulo-texto{
+  width: 90%;
+  /* Abarca todo el ancho */
+  height: 5rem;
+  color: white;
+  text-align: center;
+  padding: 0px 0;
 
+  /* Espaciado arriba y abajo */
+  font-size: 2em;
+  /* Tamaño del texto */
+  font-family:monospace;
+  opacity:0.8 ;
+}
 
 .brand-image-container {
   display: flex;
@@ -212,7 +231,21 @@ export default {
   overflow: hidden;
   /* Asegura que las imágenes también se corten a la forma redondeada */
 }
+.name-bar{
+  width: 100%;
+  /* Abarca todo el ancho */
+  height: 3rem;
+  color: white;
+  text-align: center;
+  padding: 0px 0;
+  opacity: 0.8;
 
+  /* Espaciado arriba y abajo */
+  font-size: 2em;
+  /* Tamaño del texto */
+  font-family:fantasy;
+
+}
 .brand-image-placeholder {
   display: flex;
   justify-content: center;
@@ -304,12 +337,12 @@ p {
 }
 
 .text-content {
-  flex-basis: 40%; /* Ajusta este valor para el ancho del texto */
-  padding: 2rem; /* Padding para el texto, si es necesario */
+  flex-basis: 70%; /* Ajusta este valor para el ancho del texto */
+  padding: 1rem; /* Padding para el texto, si es necesario */
 }
 
 .youtube-video-container {
-  flex-basis: 60%; /* Ajusta este valor para el ancho del video */
+  flex-basis: 50%; /* Ajusta este valor para el ancho del video */
   position: relative; /* Posicionamiento relativo para el iframe absoluto */
   padding-top: 0; /* Elimina el padding-top si ya no mantienes la relación de aspecto */
   padding: 12rem; /* Aplica padding al contenedor para evitar que el video toque los bordes */
