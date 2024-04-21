@@ -58,51 +58,52 @@
   import FooterComponent from '../components/shared/FooterComponent.vue';
   
   const vehicles = ref([
-    { 
-      name: 'Toyota', 
-      price: 25000, 
-      brand: 'Toyota', 
-      photo: 'nissan.jpeg', 
-      link: 'https://toyota.com',
-      year: 2022,
-      fuelType: 'Gasolina',
-      mileage: '15,000 km',
-      passengers: 5
-    },
-    { 
-      name: 'Honda', 
-      price: 30000, 
-      brand: 'Honda', 
-      photo: 'honda.jpeg', 
-      link: 'https://honda.com',
-      year: 2021,
-      fuelType: 'Híbrido',
-      mileage: '12,000 km',
-      passengers: 5
-    },
-    { 
-      name: 'Ford', 
-      price: 28000, 
-      brand: 'Ford', 
-      photo: 'bmwL.jpeg', 
-      link: 'https://ford.com',
-      year: 2023,
-      fuelType: 'Diesel',
-      mileage: '18,000 km',
-      passengers: 7
-    },
-    { 
-      name: 'Chevrolet', 
-      price: 27000, 
-      brand: 'Chevrolet', 
-      photo: 'hero.jpeg', 
-      link: 'https://chevrolet.com',
-      year: 2022,
-      fuelType: 'Gasolina',
-      mileage: '14,500 km',
-      passengers: 5
-    },
-  ]);
+  { 
+    name: 'Toyota Camry', 
+    price: 25000, 
+    brand: 'Toyota', 
+    link: 'https://www.toyota.com/camry/', 
+    year: 2022,
+    fuelType: 'Gasolina',
+    mileage: '15,000 km',
+    passengers: 5,
+    photo: 'ToyotaCamry2022.jpg', 
+  },
+  { 
+    name: 'Honda Accord', 
+    price: 30000, 
+    brand: 'Honda', 
+    link: 'https://www.honda.com/accord/',
+    year: 2021,
+    fuelType: 'Híbrido',
+    mileage: '12,000 km',
+    passengers: 5,
+    photo: 'HondaAccord2021.jpg', 
+  },
+  { 
+    name: 'BMW Serie 3', 
+    price: 28000, 
+    brand: 'BMW', 
+    link: 'https://www.bmw.com/en/3-series/', // Enlace oficial de BMW Serie 3
+    year: 2023,
+    fuelType: 'Diesel',
+    mileage: '18,000 km',
+    passengers: 5,
+    photo: 'BMWSerie32023.jpg', 
+  },
+  { 
+    name: 'Mercedes-Benz Clase C', 
+    price: 27000, 
+    brand: 'Mercedes-Benz', 
+    link: 'https://www.mercedes-benz.com/c-class/', // Enlace oficial de Mercedes-Benz Clase C
+    year: 2022,
+    fuelType: 'Gasolina',
+    mileage: '14,500 km',
+    passengers: 5,
+    photo: 'MercedezBenzClaseC2023.jpg', 
+  },
+]);
+
   
   const selectedVehicles = ref([]);
   const comparando = ref(false);
@@ -140,9 +141,16 @@
   </script>
   
   <style scoped>
-  h1, h2{
-    color: white;
-  }
+  h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: fantasy;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
   .background {
     background-color: #8c8484;
   }
@@ -213,6 +221,10 @@
   .card-content {
     padding: 20px;
   }
+  .card-content img {
+    width: 200px;
+    height: 150px;
+}
   
   .mensaje {
     font-style: italic;

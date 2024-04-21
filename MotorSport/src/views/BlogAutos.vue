@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <NavBarComponent />
+    <h1 class="title">Automóviles</h1>
     <section class="blog-cards-container">
       
       <div class="blog-card" v-for="card in cards" :key="card.id" @click="openModal(card)">
@@ -186,6 +187,12 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  text-align: center;
+  font-size: 3em;
+  font-family: fantasy;
+  color: white;
+}
 .blog-card button {
     background-color: #4CAF50;
     color: white;

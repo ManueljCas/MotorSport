@@ -56,9 +56,10 @@
   }
   
   .faq-title {
+    font-family: fantasy;
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 2rem;
   }
   
