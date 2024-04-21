@@ -9,6 +9,7 @@ import AboutUs from '@/views/AboutUs.vue';
 import BlogAutos from '@/views/BlogAutos.vue'
 import BlogMotos from '@/views/BlogMotos.vue'
 import FAQ from '../views/FAQ.vue';
+import Comparar from '../views/ComparadorVehiculos.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -45,6 +46,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/faq',
     name: 'FAQ',
     component: FAQ,
+  },
+  {
+    path: '/Comparar',
+    name: 'Comparar',
+    component: Comparar,
   },
   // ... otras rutas
 ];
