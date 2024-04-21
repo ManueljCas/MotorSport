@@ -53,7 +53,7 @@ export default {
 
       try {
         await loginUser(this.email, this.password);
-        this.$router.push('/blog');
+        this.$router.push('/Home');
       } catch (error) {
         this.errorMessage = error.message;
         alert(this.errorMessage);
