@@ -6,7 +6,8 @@ import Home from '@/views/Home.vue';
 import Login from '@/views/Login.vue'; 
 import Register from '@/views/Register.vue'; 
 import AboutUs from '@/views/AboutUs.vue'; 
-import Blog from '@/views/Blog.vue'
+import BlogAutos from '@/views/BlogAutos.vue'
+import BlogMotos from '@/views/BlogMotos.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,9 +31,14 @@ const routes: Array<RouteRecordRaw> = [
     component: AboutUs,
   },
   {
-    path: '/blog',
-    name: 'Blog',
-    component: Blog,
+    path: '/blogAutos',
+    name: 'BlogAutos',
+    component: BlogAutos,
+  },
+  {
+    path: '/blogMotos',
+    name: 'BlogMotos',
+    component: BlogMotos,
   },
   // ... otras rutas
 ];

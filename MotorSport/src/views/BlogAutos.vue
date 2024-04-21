@@ -53,7 +53,7 @@ import camaro2 from '@/assets/img/blog/camaro2.jpg';
 // Importa las demás imágenes que necesites.
 
 export default {
-  name: 'Blog',
+  name: 'BlogAutos',
   components: {
     NavBarComponent,
     FooterComponent
