@@ -70,12 +70,11 @@ import NavBarComponent from '../components/shared/NavBarComponent.vue';
 import FooterComponent from '../components/shared/FooterComponent.vue';
 // En tu script, importa las imágenes.
 // Asegúrate de que las rutas sean correctas y accesibles desde tu archivo .vue.
-import JeepGladiatorImage from '@/assets/img/blog/JeepGladiator.jpeg';
-import Gixxer250Image from '@/assets/img/blog/gixxer250.jpeg';
-import dominar from '@/assets/img/blog/dominar.jpeg';
 import skyline from '@/assets/img/blog/skyline.jpeg';
-import camaro from '@/assets/img/blog/camaro.jpg';
-import camaro2 from '@/assets/img/blog/camaro2.jpg';
+import CBR1000 from '../assets/img/HondaCBR1000RRFireblade.jpg'
+import DucatiV4 from '../assets/img/DucatiPanigaleV4.jpg'
+import BMW1250 from '../assets/img/BMWR1250GS.jpg'
+import KawasakiNinja from '../assets/img/KawasakiNinjaZX-10R.webp'
 // Importa las demás imágenes que necesites.
 
 export default {
@@ -88,12 +87,10 @@ export default {
     return {
 
       cards: [
-        { id: 1, title: 'Jeep Gladiator 6x6', description: 'Las motorizaciones actuales son una versión turbodiésel V6 3.0L que rinde unos 623Nm de par motor, un motor HEMI 392 de 505CV y el todopoderoso HEMI 6.2 Supercharged Hellcat de 800CV. Toda esa potencia se entrega a las 4 o 6 ruedas', image: JeepGladiatorImage,likes: 0 },
-        // Repite para cada tarjeta con la imagen correspondiente importada.
-        { id: 2, title: 'Mustang GT Premium', description: 'El Mustang GT Premium es un icono de potencia y estilo de Ford. Con un motor V8 de alto rendimiento, ofrece una experiencia de conducción emocionante y un interior lujoso con características premium, fusionando el legado del Mustang con la modernidad.', image: camaro,likes: 0  },
-        { id: 3, title: 'Ford Mustang', description: 'El Ford Mustang es un legendario automóvil deportivo estadounidense, reconocido por su diseño clásico y su potente rendimiento. Desde su debut en 1964, ha sido un ícono cultural y un símbolo de libertad y estilo.', image: camaro2,likes: 0  },
-        { id: 4, title: 'Skyline R34', description: 'El R34 Skyline, un legendario automóvil deportivo japonés fabricado por Nissan, destaca por su diseño aerodinámico y su potente motor turbocharged. Es famoso por su rendimiento excepcional y su estatus icónico en la cultura automotriz.', image: skyline,likes: 0  },
-
+      { id: 1, title: 'Honda CBR1000RR Fireblade', description: 'La Honda CBR1000RR Fireblade es una motocicleta deportiva emblemática conocida por su rendimiento excepcional y manejo ágil. Equipada con un potente motor y tecnología avanzada, ofrece una experiencia de conducción emocionante tanto en carreteras rectas como en curvas.', image: CBR1000, likes: 0 },
+      { id: 2, title: 'Ducati Panigale V4', description: 'La Ducati Panigale V4 es una motocicleta de alto rendimiento que combina potencia brutal, manejo preciso y un diseño elegante. Equipada con un motor V4 de última generación y tecnología avanzada, ofrece una experiencia de conducción emocionante tanto en carretera como en pista.', image: DucatiV4, likes: 0 },
+      { id: 3, title: 'BMW R1250GS', description: 'La BMW R1250GS es una motocicleta de aventura versátil y capaz que ha ganado numerosos elogios por su capacidad de todo terreno, comodidad en carretera y tecnología innovadora. Con su motor potente y eficiente, es una compañera confiable para explorar tanto en carreteras asfaltadas como en terrenos difíciles.', image: BMW1250, likes: 0 },
+      { id: 4, title: 'Kawasaki Ninja ZX-10R', description: 'La Kawasaki Ninja ZX-10R es una motocicleta deportiva de alto rendimiento que ofrece una combinación impresionante de potencia, agilidad y tecnología avanzada. Con su diseño aerodinámico y su motor potente, es una máquina diseñada para dominar las pistas y las carreteras.', image: KawasakiNinja, likes: 0 }
       ],
 
       modalActive: false,
