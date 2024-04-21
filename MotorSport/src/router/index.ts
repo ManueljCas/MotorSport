@@ -8,6 +8,7 @@ import Register from '@/views/Register.vue';
 import AboutUs from '@/views/AboutUs.vue'; 
 import BlogAutos from '@/views/BlogAutos.vue'
 import BlogMotos from '@/views/BlogMotos.vue'
+import FAQ from '../views/FAQ.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -39,6 +40,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/blogMotos',
     name: 'BlogMotos',
     component: BlogMotos,
+  },
+  {
+    path: '/faq',
+    name: 'FAQ',
+    component: FAQ,
   },
   // ... otras rutas
 ];

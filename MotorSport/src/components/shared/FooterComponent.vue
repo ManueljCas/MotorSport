@@ -3,7 +3,7 @@
         <div class="footer-top">
             <!-- Contact Info -->
             <div class="contact-info">
-                <span class="icon"><i class="fas fa-phone"></i> 010-001-012-025-2</span>
+                <span class="icon"><i class="fas fa-phone"></i>+52 55 1234 5678</span>
                 <span class="icon"><i class="fas fa-envelope"></i> motorsport@gmail.com</span>
             </div>
             <!-- Social Icons -->

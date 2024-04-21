@@ -5,6 +5,7 @@
       <li><router-link to="/aboutus">Nosotros</router-link></li>
       <li><router-link to="/blogAutos">Blog Autos</router-link></li>
       <li><router-link to="/blogMotos">Blog Motos</router-link></li>
+      <li><router-link to="/faq">FAQ</router-link></li>
     </ul>
     
     <div class="circle-menu" @click="toggleMenu">☰</div>
