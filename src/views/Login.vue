@@ -53,11 +53,11 @@ const login = async () => {
 
 <style scoped>
 .login-container {
+  background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
 }
 
 .login-card {
@@ -107,15 +107,16 @@ button {
   padding: 1em;
   border: none;
   border-radius: 5px;
-  background-color: #e3dfdf; /* Fondo de los botones, como en Register.vue */
-  color: black; /* Texto de los botones en negro */
+  background-color: #333;
+  color: rgb(255, 255, 255); /* Texto de los botones en negro */
   font-weight: bold;
   margin-top: 1em;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #cacaca; /* Color al pasar el ratón por encima del botón */
+  color: rgb(255, 255, 255);
+  background-color: #666666; /* Color al pasar el ratón por encima del botón */
 }
 
 .signup-prompt {
