@@ -73,7 +73,7 @@ const FooterComponent = defineComponent({
 
 .footer-divider {
   border: 0;
-  border-top: 10px solid #fff;
+  border-top: 5px solid #fff;
   /* Línea blanca para dividir las secciones */
   margin: 1rem 0;
 }

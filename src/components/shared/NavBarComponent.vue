@@ -52,7 +52,7 @@ const toggleMenu = () => {
 <style scoped>
 /* Estilos para la barra de navegación */
 .navbar {
-  background-color: #333;
+  background-color: black;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;

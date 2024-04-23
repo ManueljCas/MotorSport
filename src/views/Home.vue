@@ -199,6 +199,7 @@ function prevRightImage() {
   color: #FFFFFF; /* Elige un color que contraste bien con el fondo */
   background-color: #000000; /* Fondo oscuro para que el texto resalte */
   padding: 20px 0;
+  opacity: 0.8;
   margin-top: 20px;
   font-family: 'Arial', sans-serif; /* Fuente elegante y legible */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
@@ -260,7 +261,7 @@ function prevRightImage() {
 
 .home {
   /* Estilos para el contenedor principal */
-  background-color: #8c8484;
+  background:#373739;
 }
 
 .company-name-bar {
@@ -275,7 +276,7 @@ function prevRightImage() {
   font-size: 4em;
   /* Tamaño del texto */
   font-family: fantasy;
-  opacity: 0.8;
+
 }
 
 .motorsport-highlight {

@@ -48,6 +48,7 @@
           <p class="mensaje">Selecciona dos vehículos y haz clic en "Comparar".</p>
         </div>
       </div>
+      <div class="divider-content"></div>
       <FooterComponent />  
     </div>
   </template>
@@ -92,7 +93,7 @@
     photo: 'BMWSerie32023.jpg', 
   },
   { 
-    name: 'Mercedes-Benz Clase C', 
+    name: 'Mercedes-Benz', 
     price: 27000, 
     brand: 'Mercedes-Benz', 
     link: 'https://www.mercedes-benz.com/c-class/', // Enlace oficial de Mercedes-Benz Clase C
@@ -152,7 +153,8 @@ h2 {
   color: white;
 }
   .background {
-    background-color: #8c8484;
+    background-color:#373739;
+    
   }
   
   .comparador-container {
@@ -164,12 +166,13 @@ h2 {
   
   .selector {
     margin-bottom: 20px;
+    font-family:fantasy;
   }
   
   .vehicle-options {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    
   }
   
   .vehicle-option {
@@ -180,19 +183,27 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
+  .divider-content {
+  border: 0;
+  border-top: 5px solid white;
+  /* Línea blanca para dividir las secciones */
+  margin: 1rem 0;
+  opacity: 0.1;
+}
   
   .vehicle-option:hover {
     transform: translateY(-5px);
+    
   }
   
   .vehicle-option.selected {
-    background-color: #007bff;
-    color: white;
+    background-color:#60d4ea; 
+    
   }
   
   .vehicle-image {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 250px;
     border-radius: 8px;
   }
   
@@ -201,8 +212,8 @@ h2 {
   }
   
   .selected-name {
-    background-color: #007bff;
-    color: white;
+    background-color:#60d4ea;
+    color: black;
   }
   
   .card-container {
@@ -222,8 +233,9 @@ h2 {
     padding: 20px;
   }
   .card-content img {
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
 }
   
   .mensaje {
@@ -252,8 +264,9 @@ h2 {
   .reset-button {
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color:black;
     color: white;
+    
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -266,8 +279,8 @@ h2 {
   }
   
   .footer {
-    background-color: #8c8484;
-    padding: 20px;
+    background-color: #373739;
+    padding: 0px;
   }
   </style>
   
