@@ -70,8 +70,6 @@ import FooterComponent from '../components/shared/FooterComponent.vue';
 // En tu script, importa las imágenes.
 // Asegúrate de que las rutas sean correctas y accesibles desde tu archivo .vue.
 import JeepGladiatorImage from '@/assets/img/blog/JeepGladiator.jpeg';
-import Gixxer250Image from '@/assets/img/blog/gixxer250.jpeg';
-import dominar from '@/assets/img/blog/dominar.jpeg';
 import skyline from '@/assets/img/blog/skyline.jpeg';
 import camaro from '@/assets/img/blog/camaro.jpg';
 import camaro2 from '@/assets/img/blog/camaro2.jpg';

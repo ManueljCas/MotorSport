@@ -20,34 +20,38 @@
     </div>
   </nav>
 </template>
-
 <script>
+import { ref } from 'vue';
 import { auth } from '../../services/firebase/firebaseConfig';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { useRouter } from 'vue-router';
 
 export default {
   name: 'NavBarComponent',
-  data() {
-    return {
-      user: null,
-      showMenu: false, // Controla la visibilidad del menú desplegable
-    };
-  },
-  created() {
-    onAuthStateChanged(auth, (user) => {
-      this.user = user;
+  setup() {
+    const user = ref(null);
+    const showMenu = ref(false);
+    const router = useRouter();
+
+    // Observa cambios en el estado de autenticación
+    onAuthStateChanged(auth, (newUser) => {
+      user.value = newUser;
     });
-  },
-  methods: {
-    async logout() {
+
+    // Método para cerrar sesión
+    const logout = async () => {
       await signOut(auth);
-      this.user = null;
-      this.$router.push('/'); // Redirige al inicio después de cerrar sesión
-      this.showMenu = false; // Cierra el menú hamburguesa
-    },
-    toggleMenu() {
-      this.showMenu = !this.showMenu; // Cambia el estado de visibilidad del menú
-    },
+      user.value = null;
+      router.push('/'); // Redirige al inicio después de cerrar sesión
+      showMenu.value = false; // Cierra el menú hamburguesa
+    };
+
+    // Método para alternar la visibilidad del menú
+    const toggleMenu = () => {
+      showMenu.value = !showMenu.value;
+    };
+
+    return { user, showMenu, logout, toggleMenu };
   },
 };
 </script>
