@@ -41,33 +41,40 @@
         <div class="arrow right-arrow" @click="nextRightImage">&#10095;</div>
       </div>
     </div>
+    <div class="divider-content"></div>
+
     
     <!-- Bloques de contenido con imagen y texto -->
     <div class="content-blocks">
       <div>
         <section class="content-block">
           <div class="content-image">
-            <a href="https://www.tesla.com/es_mx/modelx">
-              <img src="@/assets/img/tesla.jpeg" alt="Descripción">
-            </a>
-          </div>
-          <div class="content-text">
-            <p class="titulo-texto">TESLA</p>
-            <p>Tesla, la compañía de vehículos eléctricos y tecnología energética, revoluciona la industria automotriz
-              con
-              sus innovaciones en baterías, conducción autónoma y energía solar, liderando el camino hacia un futuro
-              sostenible..</p>
+              <a href="https://www.tesla.com/es_mx/modelx">
+                <img src="@/assets/img/tesla.jpeg" alt="Descripción">
+              </a>
+            </div>
+          <div class="content-card"> <!-- Contenedor de la tarjeta -->
+            
+            <div class="content-text">
+              <p class="titulo-texto">TESLA</p>
+              <p>Tesla, la compañía de vehículos eléctricos y tecnología energética, revoluciona la industria automotriz
+                con
+                sus innovaciones en baterías, conducción autónoma y energía solar, liderando el camino hacia un futuro
+                sostenible..</p>
+            </div>
           </div>
         </section>
         <div class="divider-content"></div>
         <div class="video-text-block">
           <div class="text-content">
-            <p class="titulo-texto">AUDI</p>
-            <p>Sumérgete en el mundo del lujo y la alta velocidad con el Audi RS C8, un automóvil que redefine la
-              excelencia en ingeniería automotriz. Diseñado para los verdaderos conocedores del automóvil que buscan la
-              combinación perfecta de rendimiento excepcional, tecnología de vanguardia y estilo impecable, el RS C8 es
-              más que un automóvil; es una obra maestra de la innovación que lleva la experiencia de conducción a nuevas
-              alturas</p>
+            <div class="content-card"> <!-- Contenedor de la tarjeta -->
+              <p class="titulo-texto">AUDI</p>
+              <p>Sumérgete en el mundo del lujo y la alta velocidad con el Audi RS C8, un automóvil que redefine la
+                excelencia en ingeniería automotriz. Diseñado para los verdaderos conocedores del automóvil que buscan la
+                combinación perfecta de rendimiento excepcional, tecnología de vanguardia y estilo impecable, el RS C8 es
+                más que un automóvil; es una obra maestra de la innovación que lleva la experiencia de conducción a nuevas
+                alturas</p>
+            </div>
           </div>
           <div class="youtube-video-container">
             <iframe width="560" height="315" :src="videoUrl" frameborder="0"
@@ -78,35 +85,37 @@
         </div>
       </div>
 
-
-
-
       <div class="divider-content"></div>
 
       <!-- Bloque inferior -->
       <section class="content-block">
         <div class="content-image">
-          <a href="https://www.ducati.com/mx/es/motocicletas/panigale/superleggera-v4">
-            <img src="@/assets/img/titi.jpeg" alt="Descripción">
-          </a>
-        </div>
-        <div class="content-text">
-          <p class="titulo-texto">DUCATI</p>
-          <p>DUCATI, el gigante japonés del automóvil, ofrece una amplia gama de vehículos confiables y eficientes,
-            desde
-            automóviles compactos hasta SUVs y motocicletas de alto rendimiento, combinando calidad, tecnología y diseño
-            innovador.</p>
+            <a href="https://www.ducati.com/mx/es/motocicletas/panigale/superleggera-v4">
+              <img src="@/assets/img/titi.jpeg" alt="Descripción">
+            </a>
+          </div>
+        <div class="content-card"> <!-- Contenedor de la tarjeta -->
+          <div class="content-text">
+            <p class="titulo-texto">DUCATI</p>
+            <p>DUCATI, el gigante japonés del automóvil, ofrece una amplia gama de vehículos confiables y eficientes,
+              desde
+              automóviles compactos hasta SUVs y motocicletas de alto rendimiento, combinando calidad, tecnología y diseño
+              innovador.</p>
+          </div>
         </div>
       </section>
-
       <div class="divider-content"></div>
+
+      <section >
       <div class="video-text-block">
         <div class="text-content">
-          <p class="titulo-texto">YAMAHA</p>
-          <p>Adéntrate en el mundo de la velocidad y el rendimiento con la Yamaha YZF-R1, una motocicleta que lleva la
-            excelencia en ingeniería a nuevos límites. Diseñada para aquellos que buscan la emoción pura y la adrenalina
-            de la competición, la R1 es más que una simple motocicleta; es una obra maestra de la ingeniería que
-            redefine lo que es posible en el asfalto.</p>
+          <div class="content-card"> <!-- Contenedor de la tarjeta -->
+            <p class="titulo-texto">YAMAHA</p>
+            <p>Adéntrate en el mundo de la velocidad y el rendimiento con la Yamaha YZF-R1, una motocicleta que lleva la
+              excelencia en ingeniería a nuevos límites. Diseñada para aquellos que buscan la emoción pura y la adrenalina
+              de la competición, la R1 es más que una simple motocicleta; es una obra maestra de la ingeniería que
+              .</p>
+          </div>
         </div>
         <div class="youtube-video-container">
           <iframe width="560" height="315" :src="videoUrl2" frameborder="0"
@@ -115,17 +124,12 @@
           </iframe>
         </div>
       </div>
-
-
-
-
-
+    </section>
+    <div class="divider-content"></div>
     </div>
-
 
     <!-- Pie de página -->
     <FooterComponent />
-
   </div>
 </template>
 
@@ -159,7 +163,7 @@ const currentImage = computed(() => images.value[currentImageIndex.value]);
 const currentLeftImage = computed(() => leftImages.value[currentLeftImageIndex.value]);
 const currentRightImage = computed(() => rightImages.value[currentRightImageIndex.value]);
 const videoUrl = ref('https://www.youtube.com/embed/dPb3ig0LdqM');
-const videoUrl2 = ref('https://www.youtube.com/embed/zINZq9Bt8YU');
+const videoUrl2 = ref('https://www.youtube.com/embed/yuIiJGinaUQ?si=5QT44DlwkBvwzq9C');
 
 function nextImage() {
   currentImageIndex.value = (currentImageIndex.value + 1) % images.value.length;
@@ -284,7 +288,7 @@ function prevRightImage() {
 }
 
 .titulo-texto {
-  width: 90%;
+  width: 100%;
   /* Abarca todo el ancho */
   height: 5rem;
   color: white;
@@ -467,4 +471,46 @@ p {
   border: none;
   /* Elimina el borde del iframe */
 }
+
+.content-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%; /* Tamaño específico */
+    max-width: 400px; /* Tamaño máximo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agregamos transición al efecto de sombra y transformación */
+}
+
+/* Cambio de sombra y levantamiento al pasar el cursor */
+.content-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px); /* Levantamiento de 5px al pasar el cursor */
+}
+
+/* Estilo para el título dentro del card */
+.content-card .titulo-texto {
+    text-align: center;
+    color: #333; /* Color de texto */
+    font-size: 36px; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Estilo para el contenido de párrafo dentro del card */
+.content-card p {
+    color: #444; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-top: 0; /* Eliminar margen superior predeterminado */
+    margin-bottom: 10px; /* Margen inferior para separar el texto del contenido */
+}
+
+@media screen and (max-width: 768px) {
+    .content-card {
+        width: 90%; /* Reducir el tamaño en pantallas más pequeñas */
+    }
+}
+
 </style>
