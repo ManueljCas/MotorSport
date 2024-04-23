@@ -1,1 +1,5 @@
-# MotorSport
+# MotorSpor
+
+El proyecto completo se encuentra en la rama Develop.
+
+Para que el proyecto funcione necesita ejecutar el comando npm i.
