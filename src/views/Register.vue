@@ -86,7 +86,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #333;
   /* Fondo semi-transparente */
 }
 
@@ -135,19 +135,20 @@ input {
 }
 
 button {
-  color: black;
   width: 100%;
   padding: 1em;
   border: none;
   border-radius: 5px;
-  background-color: #e3dfdf;
+  background-color: #333;
+  color: rgb(255, 255, 255); /* Texto de los botones en negro */
   font-weight: bold;
   margin-top: 1em;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #555555;
+  color: rgb(255, 255, 255);
+  background-color: #666666; /* Color al pasar el ratón por encima del botón */
 }
 
 .signin-prompt {
